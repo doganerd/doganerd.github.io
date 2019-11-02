@@ -1,0 +1,11 @@
+body{
+    background-image: url(./images/bg.png);
+}
+
+div.ex1 {
+    width: 420px;
+    height: 280px;
+    margin: auto;
+    border: 3px solid #73AD21;
+}
+  
