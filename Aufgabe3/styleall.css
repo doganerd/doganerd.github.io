@@ -19,3 +19,7 @@ nav {
     background-color: brown;
     color: white;
 }
+
+a:hover {
+    color: khaki;
+}
