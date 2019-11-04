@@ -1,16 +1,15 @@
 @font-face {
-    font-family: 'jellyka';
-    src: url('/Aufgabe3/Station_4_Fonts/fonts/jellyka_delicious_cake-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-         url('/Aufgabe3/Station_4_Fonts/fonts/jellyka_delicious_cake-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-         url('/Aufgabe3/Station_4_Fonts/fonts/Jellyka\ Delicious\ Cake.ttf')  format('truetype'), /* Safari, Android, iOS */
+    font-family: 'jenifer';
+    src: url(/Aufgabe3/Station_4_Fonts/fonts/jenifer_demo-webfont.woff) format('woff'),
+         url(/Aufgabe3/Station_4_Fonts/fonts/jenifer_demo-webfont.woff2) format('woff2'),
   }
-  
+
 body{
     background-image: url(./images/bg.png);
 }
 
-.div {
-    font-family: 'jellyka';
+div {
+    font-family: 'jenifer';
 }
 
 .container {
@@ -20,6 +19,10 @@ body{
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+.div {
+    font-family: Verdana, Tahoma, sans-serif;
 }
 
 h1{
