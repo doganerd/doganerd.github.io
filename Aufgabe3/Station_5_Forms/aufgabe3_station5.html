@@ -15,16 +15,37 @@
     <img src="./images/wrapperbg.png" alt="wrapper">
 </div>    
 
-<form>
- Dein Name<br>
- <input type="text"><br>
- Deine Nachricht an den Weihnachtsmann<br>
- <input type="comment"><br>
- <br>
- <input type="submit" value="abschicken">
- <br>
- </form>
-        
 
+
+<div class="front">
+    
+<h1>Formular:</h1>
+
+<form>
+    Dein Name: <br>
+    <input type="text"><br>
+    Deine Nachricht an den Weihnachtsmann:<br>
+    <textarea name="nachricht" rows="2"></textarea><br>
+    Willst du auch ein Geschenk?<br>
+
+<label>
+
+    <input type="radio" name="group1" checked="checked">
+    <span>ja</span>
+
+</label>
+
+<label>
+
+    <input type="radio" name="group1" checked="checked">
+    <span>nein</span>
+
+</label><br>
+
+<br>
+<input type="submit" value="abschicken">
+
+</form>  
+</div>
 </body>
 </html>
