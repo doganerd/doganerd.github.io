@@ -1,0 +1,25 @@
+body {
+    background-image: url(./images/bg.png);
+}
+
+.container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+iframe {
+    position: absolute;
+    margin: 0;
+    top: 32%;
+    left: 35%;  
+}
+
+.bow {
+    position: absolute;
+    top: 60%;
+    left: 54.5%;
+}

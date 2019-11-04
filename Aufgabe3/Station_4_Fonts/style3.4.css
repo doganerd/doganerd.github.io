@@ -25,18 +25,11 @@ div {
     font-family: Verdana, Tahoma, sans-serif;
 }
 
-h1{
-    position: absolute;
-    text-align: left;
-    color: white;
-    top: 70px;
-    left: 60px;
-}
 
-p{
+.text {
     position: absolute;
-    text-align: left;
-    color: white;
-    top: 170px;
-    left: 60px;
+    top: 25%;
+    left: 35%;
+    font-size: 28px;
+    color: indigo;
 }
