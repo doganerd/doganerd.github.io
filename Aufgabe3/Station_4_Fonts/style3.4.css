@@ -1,15 +1,12 @@
-@font-face {
-    font-family: 'jenifer';
-    src: url(/Aufgabe3/Station_4_Fonts/fonts/jenifer_demo-webfont.woff) format('woff'),
-         url(/Aufgabe3/Station_4_Fonts/fonts/jenifer_demo-webfont.woff2) format('woff2'),
-  }
+
+
 
 body{
     background-image: url(./images/bg.png);
 }
 
 div {
-    font-family: 'jenifer';
+    font-family: 'schrift';
 }
 
 .container {
@@ -21,12 +18,14 @@ div {
     transform: translate(-50%, -50%);
 }
 
-.div {
-    font-family: Verdana, Tahoma, sans-serif;
+@font-face{
+
+    font-family: jellyka;
+        src: url(./fonts/Jellyka\ Delicious\ Cake.ttf );
 }
 
-
 .text {
+    font-family: 'schrift';
     position: absolute;
     top: 25%;
     left: 35%;

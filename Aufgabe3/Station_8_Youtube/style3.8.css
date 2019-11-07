@@ -1,25 +1,25 @@
 body {
     background-image: url(./images/bg.png);
+    text-align: center;
 }
 
-.container {
-    margin: 0;
+#wrapper{
     position: absolute;
+    left:50%;
     top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    transform:  translate(-50%, -50%);
 }
 
-iframe {
+iframe{
     position: absolute;
-    margin: 0;
-    top: 32%;
-    left: 35%;  
+    left: 8%;
+    top: 12%;
+    width: 500px;
+    height: 300px;
 }
 
-.bow {
+.banderole{
     position: absolute;
-    top: 60%;
-    left: 54.5%;
+    right: 0;
+    bottom: 2%;
 }
