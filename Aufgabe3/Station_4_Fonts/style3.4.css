@@ -9,10 +9,9 @@ body{
     transform:  translate(-50%, -50%);
 }
 
-@font-face{
-
-    font-family: 'jellyka';
-        src: url(./fonts/Jellyka\ Delicious\ Cake.ttf );
+@font-face {
+    font-family: myfont;
+    src: url(/Aufgabe3/Station_4_Fonts/fonts/Jellyka\ Delicious\ Cake.ttf);
 }
 
 .text {
