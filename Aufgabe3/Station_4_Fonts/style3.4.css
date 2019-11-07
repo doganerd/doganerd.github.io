@@ -11,7 +11,7 @@ body{
 
 @font-face {
     font-family: myfont;
-    src: url(/Aufgabe3/Station_4_Fonts/fonts/Jellyka\ Delicious\ Cake.ttf);
+    src: url(./fonts/Jellyka\ Delicious\ Cake.ttf);
 }
 
 .text {
@@ -19,6 +19,6 @@ body{
     position: absolute;
     top: 25%;
     left: 35%;
-    font-size: 28px;
+    font-size: 20px;
     color: indigo;
 }
