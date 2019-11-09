@@ -21,8 +21,8 @@ h1 {
 
 .stern1 {
     position: absolute;
-    top: 55%;
-    left: 37%;
+    top: 65%;
+    left: 10%;
 }
 
 .stern1:hover {
@@ -34,7 +34,7 @@ h1 {
 .stern2 {
     position: absolute;
     top: 48%;
-    left: 44%;
+    left: 30%;
 }
 
 .stern2:hover {
@@ -45,8 +45,8 @@ h1 {
 
 .stern3 {
     position: absolute;
-    top: 60%;
-    left: 52%;
+    top: 65%;
+    left: 55%;
 }
 
 .stern3:hover {
@@ -57,7 +57,7 @@ h1 {
 .stern4 {
     position: absolute;
     top: 48%;
-    left: 60%;
+    left: 70%;
 }
 
 .stern4:hover {
