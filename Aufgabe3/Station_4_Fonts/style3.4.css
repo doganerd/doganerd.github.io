@@ -17,8 +17,8 @@ body{
 .text {
     font-family: myfont;
     position: absolute;
-    top: 25%;
-    left: 35%;
+    top: 5%;
+    left: 20%;
     font-size: 20px;
     color: indigo;
 }
