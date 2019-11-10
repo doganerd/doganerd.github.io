@@ -3,6 +3,11 @@ body {
     text-align: center;
 }
 
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+  } 
+
 #wrapper{
     position: absolute;
     left:50%;
