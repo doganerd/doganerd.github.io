@@ -1,0 +1,33 @@
+body {
+    background-color: midnightblue;
+    text-align: center;
+}
+
+#wrapper{
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform:  translate(-50%, -50%);
+}
+
+
+h1{
+    position: absolute;
+    font-family: sans-serif;
+    color: white;
+}
+
+
+.button {
+  background-color: turquoise;
+  border: none;
+  color: darkslateblue;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: darkslateblue;
+}
