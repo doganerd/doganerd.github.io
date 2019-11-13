@@ -1,6 +1,6 @@
 body {
     margin: auto;
-    background-image: url(../Aufgabe4/images/quiztime.jpg);
+    background-image: url(./images/stars.jpg);
     text-align: center;
     background-size: auto; 
     
@@ -9,18 +9,40 @@ body {
 #wrapper {
     position: absolute;
     width: 100%;
+    top: 5%;
+    left: 5%
 }
 
 /*--desktop--*/
 
 @media screen and (max-width:600px) {
 
+h1 {
+    position: absolute;
+    text-align: center;
+    font-size: 26px;
+    width: 90%;
+    color: blanchedalmond;
+    font-family: Georgia, 'Times New Roman', Times, serif;  
+}
+
 .title2 {
+    position: absolute;
+    text-align: center;
+    font-size: 16px;
+    width: 90%;
+    top: -15%;
+    left: 5%;
+    color: blanchedalmond;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.smartphone {
     position: absolute;
     text-align: center;
     font-size: 14px;
     width: 90%;
-    top: 1%;
+    top: 150%;
     left: 5%;
     color: blanchedalmond;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -47,11 +69,11 @@ body {
 
 }
 
+
 .block {
     display: block;
-    width: 100%;
+    width: 90%;
     border: none;
-    background-color: #4CAF50;
     color: white;
     padding: 14px 28px;
     font-size: 16px;
