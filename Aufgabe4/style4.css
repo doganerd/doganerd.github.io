@@ -1,6 +1,9 @@
 body {
-    background-image: url(./images/bg.jpg);
+    margin: auto;
+    background-image: url(../Aufgabe4/images/quiztime.jpg);
     text-align: center;
+    background-size: auto; 
+    
 }
 
 #wrapper {
@@ -10,25 +13,58 @@ body {
 
 /*--desktop--*/
 
-@media screen and (min-width:600px) {
+@media screen and (max-width:600px) {
 
-h1 {
+.title2 {
     position: absolute;
     text-align: center;
+    font-size: 14px;
     width: 90%;
-    top:30%;
+    top: 1%;
     left: 5%;
     color: blanchedalmond;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-
 .button {
-    position: absolute;
+    width: 200px;
+    background-color: midnightblue;
+    border: none;
+    border-radius: 5px;
+    color: blanchedalmond;
+    padding: 10px 100px;
     text-align: center;
-    width: 90%;
-    top: 100%;
-    left: 5%;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: royalblue;
+    color: blanchedalmond;
+
+}
+
+.block {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+.lost {
+    text-align: center;
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: blanchedalmond;
+
 }
 
 
@@ -37,4 +73,4 @@ h1 {
 
 
 
-}    
+}
