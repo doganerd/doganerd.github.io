@@ -58,23 +58,23 @@ var prozentAU3 = prozentAU2 / emissionAustralien2008 * 100;
 
 //Abkürzungen
 
-var EU = "Europa"
-var NA = "Nordamerika"
-var SA = "Südamerika"
-var AF = "Afrika"
-var AS = "Asien"
-var AU = "Australien"
+var EU = "Europa";
+var NA = "Nordamerika";
+var SA = "Südamerika";
+var AF = "Afrika";
+var AS = "Asien";
+var AU = "Australien";
 
-var a = "Die Emission von"
-var b = "ist:"
-var c = "kg Co2. "
-var d = "Relativ zur Gesamtemission der Welt verursacht"
-var e = "damit"
-var f = "%"
-var g = " Für"
-var h = "hat sich 2018 im Vergleich zu 2008 die Emission um"
-var i = "verändert. "
-var j = "2018 im Vergleich zu 2008 sind das"
+var a = "Die Emission von";
+var b = "ist:";
+var c = "kg Co2. ";
+var d = "Relativ zur Gesamtemission der Welt verursacht";
+var e = "damit";
+var f = "%";
+var g = " Für";
+var h = "hat sich 2018 im Vergleich zu 2008 die Emission um";
+var i = "verändert. ";
+var j = "2018 im Vergleich zu 2008 sind das";
 
 //Konsole
 
