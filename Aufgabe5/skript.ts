@@ -1,80 +1,80 @@
 //Emissionen 2008
 
-var emissionEuropa2008 = 4965.7;
-var emissionNordamerika2008 = 6600.4;
-var emissionSuedamerika2008 = 1132.6;
-var emissionAfrika2008 = 1028.0;
-var emissionAsien2008 = 12954.7;
-var emissionAustralien2008 = 1993.0;
+var emissionEuropa2008:number = 4965.7;
+var emissionNordamerika2008:number = 6600.4;
+var emissionSuedamerika2008:number = 1132.6;
+var emissionAfrika2008:number = 1028.0;
+var emissionAsien2008:number = 12954.7;
+var emissionAustralien2008:number = 1993.0;
 
-var alle2008 = emissionEuropa2008 + emissionNordamerika2008 + emissionSuedamerika2008 + emissionAfrika2008 + emissionAsien2008 + emissionAustralien2008;
+var alle2008:number = emissionEuropa2008 + emissionNordamerika2008 + emissionSuedamerika2008 + emissionAfrika2008 + emissionAsien2008 + emissionAustralien2008;
 
 //Emissionen 2018
 
-var emissionEuropa2018 = 4209.3;
-var emissionNordamerika2018 = 6035.6;
-var emissionSuedamerika2018 = 1261.5;
-var emissionAfrika2018 = 1235.5;
-var emissionAsien2018 = 16274.1;
-var emissionAustralien2018 = 2100.5;
+var emissionEuropa2018:number = 4209.3;
+var emissionNordamerika2018:number = 6035.6;
+var emissionSuedamerika2018:number = 1261.5;
+var emissionAfrika2018:number = 1235.5;
+var emissionAsien2018:number = 16274.1;
+var emissionAustralien2018:number = 2100.5;
 
-var alle2018 = emissionEuropa2018 + emissionNordamerika2018 + emissionSuedamerika2018 + emissionAfrika2018 + emissionAsien2018 + emissionAustralien2018;
+var alle2018:number = emissionEuropa2018 + emissionNordamerika2018 + emissionSuedamerika2018 + emissionAfrika2018 + emissionAsien2018 + emissionAustralien2018;
 
 //ProzentEuropa
 
-var prozentEU1 = emissionEuropa2018 * 100 / alle2018;
-var prozentEU2 = emissionEuropa2018 - emissionEuropa2008;
-var prozentEU3 = prozentEU2 / emissionEuropa2008 * 100;
+var prozentEU1:number = emissionEuropa2018 * 100 / alle2018;
+var prozentEU2:number = emissionEuropa2018 - emissionEuropa2008;
+var prozentEU3:number = prozentEU2 / emissionEuropa2008 * 100;
 
 //ProzentNordamerika
 
-var prozentNA1 = emissionNordamerika2018 * 100 / alle2018;
-var prozentNA2 = emissionNordamerika2018 - emissionNordamerika2008;
-var prozentNA3 = prozentNA2 / emissionNordamerika2008 * 100;
+var prozentNA1:number = emissionNordamerika2018 * 100 / alle2018;
+var prozentNA2:number = emissionNordamerika2018 - emissionNordamerika2008;
+var prozentNA3:number = prozentNA2 / emissionNordamerika2008 * 100;
 
 //ProzentSuedamerika
 
-var prozentSA1 = emissionSuedamerika2018 * 100 / alle2018;
-var prozentSA2 = emissionSuedamerika2018 - emissionSuedamerika2008;
-var prozentSA3 = prozentSA2 / emissionSuedamerika2008 * 100;
+var prozentSA1:number = emissionSuedamerika2018 * 100 / alle2018;
+var prozentSA2:number = emissionSuedamerika2018 - emissionSuedamerika2008;
+var prozentSA3:number = prozentSA2 / emissionSuedamerika2008 * 100;
 
 //ProzentAfrika
 
-var prozentAF1 = emissionAfrika2018 * 100 / alle2018;
-var prozentAF2 = emissionAfrika2018 - emissionAfrika2008;
-var prozentAF3 = prozentAF2 / emissionAfrika2008 * 100;
+var prozentAF1:number = emissionAfrika2018 * 100 / alle2018;
+var prozentAF2:number = emissionAfrika2018 - emissionAfrika2008;
+var prozentAF3:number = prozentAF2 / emissionAfrika2008 * 100;
 
 //ProzentAsien
 
-var prozentAS1 = emissionAsien2018 * 100 / alle2018;
-var prozentAS2 = emissionAsien2018 - emissionAsien2008;
-var prozentAS3 = prozentAS2 / emissionAsien2008 * 100;
+var prozentAS1:number = emissionAsien2018 * 100 / alle2018;
+var prozentAS2:number = emissionAsien2018 - emissionAsien2008;
+var prozentAS3:number = prozentAS2 / emissionAsien2008 * 100;
 
 //ProzentAustralien
 
-var prozentAU1 = emissionAustralien2018 * 100 / alle2018;
-var prozentAU2 = emissionAustralien2018 - emissionAustralien2008;
-var prozentAU3 = prozentAU2 / emissionAustralien2008 * 100;
+var prozentAU1:number = emissionAustralien2018 * 100 / alle2018;
+var prozentAU2:number = emissionAustralien2018 - emissionAustralien2008;
+var prozentAU3:number = prozentAU2 / emissionAustralien2008 * 100;
 
 //Abkürzungen
 
-var EU = "Europa";
-var NA = "Nordamerika";
-var SA = "Südamerika";
-var AF = "Afrika";
-var AS = "Asien";
-var AU = "Australien";
+var EU:string = "Europa";
+var NA:string = "Nordamerika";
+var SA:string = "Südamerika";
+var AF:string = "Afrika";
+var AS:string = "Asien";
+var AU:string = "Australien";
 
-var a = "Die Emission von";
-var b = "ist:";
-var c = "kg Co2. ";
-var d = "Relativ zur Gesamtemission der Welt verursacht";
-var e = "damit";
-var f = "%";
-var g = " Für";
-var h = "hat sich 2018 im Vergleich zu 2008 die Emission um";
-var i = "verändert. ";
-var j = "2018 im Vergleich zu 2008 sind das";
+var a:string = "Die Emission von";
+var b:string = "ist:";
+var c:string = "kg Co2. ";
+var d:string = "Relativ zur Gesamtemission der Welt verursacht";
+var e:string = "damit";
+var f:string = "%";
+var g:string = " Für";
+var h:string = "hat sich 2018 im Vergleich zu 2008 die Emission um";
+var i:string = "verändert. ";
+var j:string = "2018 im Vergleich zu 2008 sind das";
 
 //Konsole
 
