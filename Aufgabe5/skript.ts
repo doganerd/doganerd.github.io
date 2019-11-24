@@ -1,5 +1,6 @@
 //Emissionen 2008
 
+
 var emissionEuropa2008:number = 4965.7;
 var emissionNordamerika2008:number = 6600.4;
 var emissionSuedamerika2008:number = 1132.6;
@@ -22,6 +23,7 @@ var alle2018:number = emissionEuropa2018 + emissionNordamerika2018 + emissionSue
 
 //ProzentEuropa
 
+function functionEurope(prozentEU1:number , prozentEU2:number , prozentEU3:number) {
 var prozentEU1:number = emissionEuropa2018 * 100 / alle2018;
 var prozentEU2:number = emissionEuropa2018 - emissionEuropa2008;
 var prozentEU3:number = prozentEU2 / emissionEuropa2008 * 100;
@@ -84,3 +86,10 @@ console.log(a+SA+b+emissionSuedamerika2018+f+c+d+NA+e+prozentSA1+g+NA+h+prozentS
 console.log(a+AF+b+emissionAfrika2018+f+c+d+AF+e+prozentAF1+g+AF+h+prozentAF3+f+i+j+prozentAF2+f);
 console.log(a+AS+b+emissionAsien2018+f+c+d+AS+e+prozentAS1+g+AS+h+prozentAS3+f+i+j+prozentAS2+f);
 console.log(a+AU+b+emissionAustralien2018+f+c+d+AU+e+prozentAU1+g+AU+h+prozentAU3+f+i+j+prozentAU2+f);
+
+//
+
+function europa() {
+console.log("x");
+document.querySelector(".europa").addEventListener("click", europa);
+}
