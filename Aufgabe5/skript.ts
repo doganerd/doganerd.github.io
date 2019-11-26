@@ -94,7 +94,7 @@ function Europa(){
     document.querySelector("#Zahl2").innerHTML="13.52%"
     document.querySelector("#Zahl3").innerHTML="-15.23%"
     document.querySelector("#Zahl4").innerHTML="-756.4"
-    document.querySelector(".chart").setAttribute("style", "height:"+ prozentEU1 + '%')
+    document.querySelector(".chart").setAttribute("style", "height:13%")
 }
 
 window.addEventListener("load", function() {
@@ -123,7 +123,7 @@ function Südamerika(){
     document.querySelector("#Zahl1a").innerHTML= "Emission absolute of South America in 2018"
     document.querySelector("#Zahl2").innerHTML="4.05%"
     document.querySelector("#Zahl3").innerHTML="11.38%"
-    document.querySelector("#Zahl4").innerHTML="-564.8"
+    document.querySelector("#Zahl4").innerHTML="128.9"
     document.querySelector(".chart").setAttribute("style", "height:"+ prozentSA1 + '%')
 }
 
@@ -155,7 +155,7 @@ function Asien(){
     document.querySelector("#Zahl2").innerHTML="52.3%"
     document.querySelector("#Zahl3").innerHTML="25.62%"
     document.querySelector("#Zahl4").innerHTML="3319.4"
-    document.querySelector(".chart").setAttribute("style", "height:"+ prozentAS1 + '%')
+    document.querySelector(".chart").setAttribute("style", "height:" + prozentAS1 + '%')
 }
 
 window.addEventListener("load", function() {
@@ -171,7 +171,7 @@ function Australien(){
     document.querySelector("#Zahl2").innerHTML="6.75%"
     document.querySelector("#Zahl3").innerHTML="5.39%"
     document.querySelector("#Zahl4").innerHTML="107.5"
-    document.querySelector(".chart").setAttribute("style", "height:"+ prozentAU1 + '%')
+    document.querySelector(".chart").setAttribute("style", "height:" + prozentAU1 + '%')
 }
 
 window.addEventListener("load", function() {
@@ -179,4 +179,4 @@ document.querySelector(".australia").addEventListener("click", Australien);
 });
 
 
-// sourceMappingURL=skript.js.map
+//# sourceMappingURL=skript.js.map
