@@ -80,7 +80,7 @@ var j = "2018 im Vergleich zu 2008 sind das ";
 
 console.log(a+EU+b+emissionEuropa2018+f+c+d+EU+e+prozentEU1+f+g+EU+h+prozentEU3+f+i+j+prozentEU2+f);
 console.log(a+NA+b+emissionNordamerika2018+f+c+d+NA+e+prozentNA1+f+g+NA+h+prozentNA3+f+i+j+prozentNA2+f);
-console.log(a+SA+b+emissionSuedamerika2018+f+c+d+NA+e+prozentSA1+f+g+NA+h+prozentSA3+f+i+j+prozentNA2+f);
+console.log(a+SA+b+emissionSuedamerika2018+f+c+d+SA+e+prozentSA1+f+g+SA+h+prozentSA3+f+i+j+prozentSA2+f);
 console.log(a+AF+b+emissionAfrika2018+f+c+d+AF+e+prozentAF1+f+g+AF+h+prozentAF3+f+i+j+prozentAF2+f);
 console.log(a+AS+b+emissionAsien2018+f+c+d+AS+e+prozentAS1+f+g+AS+h+prozentAS3+f+i+j+prozentAS2+f);
 console.log(a+AU+b+emissionAustralien2018+f+c+d+AU+e+prozentAU1+f+g+AU+h+prozentAU3+f+i+j+prozentAU2+f);
