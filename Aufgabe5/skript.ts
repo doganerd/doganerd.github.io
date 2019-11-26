@@ -23,10 +23,25 @@ var alle2018:number = emissionEuropa2018 + emissionNordamerika2018 + emissionSue
 
 //ProzentEuropa
 
-function functionEurope(prozentEU1:number , prozentEU2:number , prozentEU3:number) {
+function europa() {
+
+    document.querySelector("h1").innerHTML = "Carbon Dioxide Emissions in Europe";
+    document.querySelector("#Zahl1").innerHTML = "4209.3";
+    document.querySelector("#Zahl2").innerHTML = "13.5";
+    document.querySelector("#title2").innerHTML = "Europe";
+    document.querySelector("#Zahl3").innerHTML = "-15.2";
+    document.querySelector("#Zahl4").innerHTML = "-756.4";
+    
+    document.querySelector(".chart").setAttribute("style", "height:" + prozentEU1 + '%');
+    }
+
 var prozentEU1:number = emissionEuropa2018 * 100 / alle2018;
 var prozentEU2:number = emissionEuropa2018 - emissionEuropa2008;
 var prozentEU3:number = prozentEU2 / emissionEuropa2008 * 100;
+
+window.addEventListener("load", function () {
+    document.querySelector(".Europe").addEventListener("click", Europe);
+});
 
 //ProzentNordamerika
 
@@ -41,11 +56,24 @@ var prozentSA2:number = emissionSuedamerika2018 - emissionSuedamerika2008;
 var prozentSA3:number = prozentSA2 / emissionSuedamerika2008 * 100;
 
 //ProzentAfrika
+function Afrika(){
+    document.querySelector("h1").innerHTML = "Carbon Dioxide Emissions in Africa";
+    document.querySelector("#Zahl1").innerHTML = "1235.5";
+    document.querySelector("#Zahl2").innerHTML = "3.97%";
+    document.querySelector("#Zahl1a").innerHTML = "Emission absolute of Africa in 2018";
+    document.querySelector("#Zahl3").innerHTML = "20.2%";
+    document.querySelector("#Zahl4").innerHTML = "507.4";
+    
+    document.querySelector(".chart").setAttribute("style", "height:" + prozentAF1 + '%');
+    }
 
 var prozentAF1:number = emissionAfrika2018 * 100 / alle2018;
 var prozentAF2:number = emissionAfrika2018 - emissionAfrika2008;
 var prozentAF3:number = prozentAF2 / emissionAfrika2008 * 100;
 
+window.addEventListener("load", function () {
+    document.querySelector(".africa").addEventListener("click", Afrika);
+});
 //ProzentAsien
 
 var prozentAS1:number = emissionAsien2018 * 100 / alle2018;
@@ -89,7 +117,21 @@ console.log(a+AU+b+emissionAustralien2018+f+c+d+AU+e+prozentAU1+g+AU+h+prozentAU
 
 //
 
-function europa() {
-console.log("x");
-document.querySelector(".europa").addEventListener("click", europa);
+
+window.addEventListener("load", function () {
+    document.querySelector(".europa").addEventListener("click", Europe);
+});
+
+function northamerica() {
+document.querySelector("#title").innerHTML = "NorthAmerica";
+document.querySelector("#Zahl1").innerHTML = "6035.6";
+document.querySelector("#Zahl2").innerHTML = "13.5";
+document.querySelector("#title2").innerHTML = "NorthAmerica";
+document.querySelector("#Zahl3").innerHTML = "-15.2";
+document.querySelector("#Zahl4").innerHTML = "-756.4";
+
+document.querySelector(".chart").setAttribute("style", "height:" + prozentEU1 + '%');
 }
+window.addEventListener("load", function () {
+    document.querySelector(".northamerica").addEventListener("click", NordAmerika);
+});

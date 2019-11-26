@@ -12,36 +12,40 @@
 
 <body>
     <nav>
-        <img src="images/europe.png" class="europe">
-        <img src="images/northamerica.png" class="northamerica">
-        <img src="images/southamerica.png" class="southamerica">
-        <img src="images/africa.png" class="africa">
-        <img src="images/asia.png" class="asia">
-        <img src="images/australia.png" class="australia">
+        <img id="EUR" src="images/europe.png" class="europe">
+        <img id="NOR" src="images/northamerica.png" class="northamerica">
+        <img id="SOU" src="images/southamerica.png" class="southamerica">
+        <img id="AFR" src="images/africa.png" class="africa">
+        <img id="ASI" src="images/asia.png" class="asia">
+        <img id="AUS" src="images/australia.png" class="australia">
     </nav>
 
     <h1>
-        Carbon Dioxide Emissions in <span id="titlechange">Europe</span>
+        Carbon Dioxide Emissions in Europe
     </h1>
+
+    <div class="chartWrapper">
+        <div cass="chart" style="height: 10%"></div>
+    </div>
 
     <main>
         <section>
-            <h2>4209.3</h2>
-            <p>Emission absolute of Europe in 2018</p>
+            <h2 id="Zahl1" >4209.3</h2>
+            <p id="Zahl1a">Emission absolute of Europe in 2018</p>
         </section>
         
         <section>
-            <h2>4%</h2>
+            <h2 id="Zahl2">4%</h2>
             <p>Relative to total world's emission</p>
         </section>
         
         <section>
-            <h2>1.2%</h2>
+            <h2 id="Zahl3">1.2%</h2>
             <p>Growth rate between 2008 and 2018 (in %)</p>
         </section>
         
         <section>
-            <h2>-400</h2>
+            <h2 id="Zahl4">-400</h2>
             <p>Growth rate between 2008 and 2018 (absolute)</p>
         </section>
     </main>
