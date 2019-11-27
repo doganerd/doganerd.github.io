@@ -88,13 +88,13 @@ console.log(a+AU+b+emissionAustralien2018+f+c+d+AU+e+prozentAU1+g+AU+h+prozentAU
 
 //---europa---
 function Europa(){
-    document.querySelector("h1").innerHTML= "Carbon Dioxide Emissions in Europe"
-    document.querySelector("#Zahl1").innerHTML= "4209.3"
-    document.querySelector("#Zahl1a").innerHTML= "Emission absolute of Europe in 2018"
-    document.querySelector("#Zahl2").innerHTML="13.52%"
-    document.querySelector("#Zahl3").innerHTML="-15.23%"
-    document.querySelector("#Zahl4").innerHTML="-756.4"
-    document.querySelector(".chart").setAttribute("style", "height:13%")
+    document.querySelector("h1").innerHTML= "Carbon Dioxide Emissions in Europe";
+    document.querySelector("#Zahl1").innerHTML= "4209.3";
+    document.querySelector("#Zahl1a").innerHTML= "Emission absolute of Europe in 2018";
+    document.querySelector("#Zahl2").innerHTML="13.52%";
+    document.querySelector("#Zahl3").innerHTML="-15.23%";
+    document.querySelector("#Zahl4").innerHTML="-756.4";
+    document.querySelector(".chart").setAttribute("style", "height:" + prozentEU1 + "%");
 }
 
 window.addEventListener("load", function() {
@@ -103,13 +103,13 @@ document.querySelector(".europe").addEventListener("click", Europa);
 
 //---Noramerika---
 function Nordamerika(){
-    document.querySelector("h1").innerHTML= "Carbon Dioxide Emissions in North America"
-    document.querySelector("#Zahl1").innerHTML= "6035.6"
-    document.querySelector("#Zahl1a").innerHTML= "Emission absolute of North America in 2018"
-    document.querySelector("#Zahl2").innerHTML="19.39%"
-    document.querySelector("#Zahl3").innerHTML="-8.55%"
-    document.querySelector("#Zahl4").innerHTML="-564.8"
-    document.querySelector(".chart").setAttribute("style", "height:"+ prozentNA1 + '%')
+    document.querySelector("h1").innerHTML= "Carbon Dioxide Emissions in North America";
+    document.querySelector("#Zahl1").innerHTML= "6035.6";
+    document.querySelector("#Zahl1a").innerHTML= "Emission absolute of North America in 2018";
+    document.querySelector("#Zahl2").innerHTML="19.39%";
+    document.querySelector("#Zahl3").innerHTML="-8.55%";
+    document.querySelector("#Zahl4").innerHTML="-564.8";
+    document.querySelector(".chart").setAttribute("style", "height:"+ prozentNA1 + '%');
 }
 
 window.addEventListener("load", function() {
@@ -118,13 +118,13 @@ document.querySelector(".northamerica").addEventListener("click", Nordamerika);
 
 //---südamerika---
 function Südamerika(){
-    document.querySelector("h1").innerHTML= "Carbon Dioxide Emissions in South America"
-    document.querySelector("#Zahl1").innerHTML= "1261.5"
-    document.querySelector("#Zahl1a").innerHTML= "Emission absolute of South America in 2018"
-    document.querySelector("#Zahl2").innerHTML="4.05%"
-    document.querySelector("#Zahl3").innerHTML="11.38%"
-    document.querySelector("#Zahl4").innerHTML="128.9"
-    document.querySelector(".chart").setAttribute("style", "height:"+ prozentSA1 + '%')
+    document.querySelector("h1").innerHTML= "Carbon Dioxide Emissions in South America";
+    document.querySelector("#Zahl1").innerHTML= "1261.5";
+    document.querySelector("#Zahl1a").innerHTML= "Emission absolute of South America in 2018";
+    document.querySelector("#Zahl2").innerHTML="4.05%";
+    document.querySelector("#Zahl3").innerHTML="11.38%";
+    document.querySelector("#Zahl4").innerHTML="128.9";
+    document.querySelector(".chart").setAttribute("style", "height:"+ prozentSA1 + '%');
 }
 
 window.addEventListener("load", function() {
@@ -133,13 +133,13 @@ document.querySelector(".southamerica").addEventListener("click", Südamerika);
 
 //---afrika---
 function Afrika(){
-    document.querySelector("h1").innerHTML= "Carbon Dioxide Emissions in Africa"
-    document.querySelector("#Zahl1").innerHTML= "1235.5"
-    document.querySelector("#Zahl1a").innerHTML= "Emission absolute of Africa in 2018"
-    document.querySelector("#Zahl2").innerHTML="3.97%"
-    document.querySelector("#Zahl3").innerHTML="20.18%"
-    document.querySelector("#Zahl4").innerHTML="207.5"
-    document.querySelector(".chart").setAttribute("style", "height:"+ prozentAF1 + '%')
+    document.querySelector("h1").innerHTML= "Carbon Dioxide Emissions in Africa";
+    document.querySelector("#Zahl1").innerHTML= "1235.5";
+    document.querySelector("#Zahl1a").innerHTML= "Emission absolute of Africa in 2018";
+    document.querySelector("#Zahl2").innerHTML="3.97%";
+    document.querySelector("#Zahl3").innerHTML="20.18%";
+    document.querySelector("#Zahl4").innerHTML="207.5";
+    document.querySelector(".chart").setAttribute("style", "height:"+ prozentAF1 + '%');
 }
 
 window.addEventListener("load", function() {
@@ -149,13 +149,13 @@ document.querySelector(".africa").addEventListener("click", Afrika);
 
 //---asien---
 function Asien(){
-    document.querySelector("h1").innerHTML= "Carbon Dioxide Emissions in Asia"
-    document.querySelector("#Zahl1").innerHTML= "16274.1"
-    document.querySelector("#Zahl1a").innerHTML= "Emission absolute of Asia in 2018"
-    document.querySelector("#Zahl2").innerHTML="52.3%"
-    document.querySelector("#Zahl3").innerHTML="25.62%"
-    document.querySelector("#Zahl4").innerHTML="3319.4"
-    document.querySelector(".chart").setAttribute("style", "height:" + prozentAS1 + '%')
+    document.querySelector("h1").innerHTML= "Carbon Dioxide Emissions in Asia";
+    document.querySelector("#Zahl1").innerHTML= "16274.1";
+    document.querySelector("#Zahl1a").innerHTML= "Emission absolute of Asia in 2018";
+    document.querySelector("#Zahl2").innerHTML="52.3%";
+    document.querySelector("#Zahl3").innerHTML="25.62%";
+    document.querySelector("#Zahl4").innerHTML="3319.4";
+    document.querySelector(".chart").setAttribute("style", "height:"+ prozentAS1 + '%');
 }
 
 window.addEventListener("load", function() {
@@ -165,18 +165,17 @@ document.querySelector(".asia").addEventListener("click", Asien);
 
 //---australien---
 function Australien(){
-    document.querySelector("h1").innerHTML= "Carbon Dioxide Emissions in Australia"
-    document.querySelector("#Zahl1").innerHTML= "2100.5"
-    document.querySelector("#Zahl1a").innerHTML= "Emission absolute of Australia in 2018"
-    document.querySelector("#Zahl2").innerHTML="6.75%"
-    document.querySelector("#Zahl3").innerHTML="5.39%"
-    document.querySelector("#Zahl4").innerHTML="107.5"
-    document.querySelector(".chart").setAttribute("style", "height:" + prozentAU1 + '%')
+    document.querySelector("h1").innerHTML= "Carbon Dioxide Emissions in Australia";
+    document.querySelector("#Zahl1").innerHTML= "2100.5";
+    document.querySelector("#Zahl1a").innerHTML= "Emission absolute of Australia in 2018";
+    document.querySelector("#Zahl2").innerHTML="6.75%";
+    document.querySelector("#Zahl3").innerHTML="5.39%";
+    document.querySelector("#Zahl4").innerHTML="107.5";
+    document.querySelector(".chart").setAttribute("style", "height:"+ prozentAU1 + 'px');
 }
 
 window.addEventListener("load", function() {
 document.querySelector(".australia").addEventListener("click", Australien);
 });
-
 
 //# sourceMappingURL=skript.js.map
