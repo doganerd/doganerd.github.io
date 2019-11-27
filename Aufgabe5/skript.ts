@@ -124,7 +124,7 @@ function Südamerika(){
     document.querySelector("#Zahl2").innerHTML="4.05%";
     document.querySelector("#Zahl3").innerHTML="11.38%";
     document.querySelector("#Zahl4").innerHTML="128.9";
-    document.querySelector(".chart").setAttribute("style", "height:"+ prozentSA1 + '%');
+    document.querySelector(".chartWrapper .chart").setAttribute("style", "height:"+ prozentSA1 + '%');
 }
 
 window.addEventListener("load", function() {
