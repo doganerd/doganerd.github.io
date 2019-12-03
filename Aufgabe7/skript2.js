@@ -1,13 +1,13 @@
 window.addEventListener("load", function () {
-    document.querySelector("#audio1").addEventListener("mousedown", function () { playSample("kick.mp3"); });
-    document.querySelector("#audio2").addEventListener("mousedown", function () { playSample("hihat.mp3"); });
-    document.querySelector("#audio3").addEventListener("mousedown", function () { playSample("snare.mp3"); });
-    document.querySelector("#audio4").addEventListener("mousedown", function () { playSample("A.mp3"); });
-    document.querySelector("#audio5").addEventListener("mousedown", function () { playSample("C.mp3"); });
-    document.querySelector("#audio6").addEventListener("mousedown", function () { playSample("F.mp3"); });
-    document.querySelector("#audio7").addEventListener("mousedown", function () { playSample("G.mp3"); });
-    document.querySelector("#audio8").addEventListener("mousedown", function () { playSample("laugh-1.mp3"); });
-    document.querySelector("#audio9").addEventListener("mousedown", function () { playSample("laugh-2.mp3"); });
+    document.querySelector("#audio1").addEventListener("click", function () { playSample("A.mp3"); });
+    document.querySelector("#audio2").addEventListener("click", function () { playSample("C.mp3"); });
+    document.querySelector("#audio3").addEventListener("click", function () { playSample("F.mp3"); });
+    document.querySelector("#audio4").addEventListener("click", function () { playSample("G.mp3"); });
+    document.querySelector("#audio5").addEventListener("click", function () { playSample("kick.mp3"); });
+    document.querySelector("#audio6").addEventListener("click", function () { playSample("hihat.mp3"); });
+    document.querySelector("#audio7").addEventListener("click", function () { playSample("snare.mp3"); });
+    document.querySelector("#audio8").addEventListener("click", function () { playSample("laugh-1.mp3"); });
+    document.querySelector("#audio9").addEventListener("click", function () { playSample("laugh-2.mp3"); });
     document.querySelector("#play").addEventListener("click", Play);
 });
 function playSample(samples) {

@@ -18,9 +18,9 @@ body {
     left: -100px;
     width: 120px;
     height: 120px;
-    background-color: coral;
+    background-color: #FE2E2E;
     border-radius: 20px;
-    border-color: sienna;
+    border-color: #8A2908;
 }
 
 #audio2 {
@@ -29,9 +29,9 @@ body {
     left: 30px;
     width: 120px;
     height: 120px;
-    background-color: coral;
+    background-color: #FF0000;
     border-radius: 20px;
-    border-color: sienna;
+    border-color: #8A2908;
 }
 
 #audio3 {
@@ -40,9 +40,9 @@ body {
     left: 160px;
     width: 120px;
     height: 120px;
-    background-color: coral;
+    background-color: #DF0101;
     border-radius: 20px;
-    border-color: sienna;
+    border-color: #8A2908;
 }
 
 #audio4 {
@@ -51,9 +51,9 @@ body {
     left: -100px;
     width: 120px;
     height: 120px;
-    background-color: coral;
+    background-color: #B40404;
     border-radius: 20px;
-    border-color: sienna;
+    border-color: #8A2908;
 }
 
 #audio5 {
@@ -62,9 +62,9 @@ body {
     left: 30px;
     width: 120px;
     height: 120px;
-    background-color: coral;
+    background-color: #8A0808;
     border-radius: 20px;
-    border-color: sienna;
+    border-color: #8A2908;
 }
 
 #audio6 {
@@ -73,9 +73,9 @@ body {
     left: 160px;
     width: 120px;
     height: 120px;
-    background-color: coral;
+    background-color: #610B0B;
     border-radius: 20px;
-    border-color: sienna;
+    border-color: #8A2908;
 }
 
 #audio7 {
@@ -84,9 +84,9 @@ body {
     left: -100px;
     width: 120px;
     height: 120px;
-    background-color: coral;
+    background-color: #3B0B0B;
     border-radius: 20px;
-    border-color: sienna;
+    border-color: #8A2908;
 }
 
 #audio8 {
@@ -95,9 +95,9 @@ body {
     left: 30px;
     width: 120px;
     height: 120px;
-    background-color: coral;
+    background-color: #2A0A0A;
     border-radius: 20px;
-    border-color: sienna;
+    border-color: #8A2908;
 }
 
 #audio9 {
@@ -106,54 +106,54 @@ body {
     left: 160px;
     width: 120px;
     height: 120px;
-    background-color: coral;
+    background-color: #190707;
     border-radius: 20px;
-    border-color: sienna;
+    border-color: #8A2908;
 }
 
 #audio1:hover {
-    background-color: tan;
-    border-color: blueviolet;
+    background-color: #FA5858;
+    border-color: #F6CECE;
 }
 
 #audio2:hover {
-    background-color: tan;
-    border-color: blueviolet;
+    background-color: #FE2E2E;
+    border-color: #F6CECE;
 }
 
 #audio3:hover {
-    background-color: tan;
-    border-color: blueviolet;
+    background-color: #FF0000;
+    border-color: #F6CECE;
 }
 
 #audio4:hover {
-    background-color: tan;
-    border-color: blueviolet;
+    background-color: #DF0101;
+    border-color: #F6CECE;
 }
 
 #audio5:hover {
-    background-color: tan;
-    border-color: blueviolet;
+    background-color: #B40404;
+    border-color: #F6CECE;
 }
 
 #audio6:hover {
-    background-color: tan;
-    border-color: blueviolet;
+    background-color: #8A0808;
+    border-color: #F6CECE;
 }
 
 #audio7:hover {
-    background-color: tan;
-    border-color: blueviolet;
+    background-color: #610B0B;
+    border-color: #F6CECE;
 }
 
 #audio8:hover {
-    background-color: tan;
-    border-color: blueviolet;
+    background-color: #3B0B0B;
+    border-color: #F6CECE;
 }
 
 #audio9:hover {
-    background-color: tan;
-    border-color: blueviolet;
+    background-color: #2A0A0A;
+    border-color: #F6CECE;
 }
 
 #play {
