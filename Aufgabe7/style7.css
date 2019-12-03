@@ -1,0 +1,165 @@
+body {
+    background-color: black;
+}
+
+
+.drumpads {
+
+    position: absolute;
+    left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+}
+
+#audio1 {
+    position: absolute;
+    top: -200px;
+    left: -100px;
+    width: 120px;
+    height: 120px;
+    background-color: coral;
+    border-radius: 20px;
+    border-color: sienna;
+}
+
+#audio2 {
+    position: absolute;
+    top: -200px;
+    left: 30px;
+    width: 120px;
+    height: 120px;
+    background-color: coral;
+    border-radius: 20px;
+    border-color: sienna;
+}
+
+#audio3 {
+    position: absolute;
+    top: -200px;
+    left: 160px;
+    width: 120px;
+    height: 120px;
+    background-color: coral;
+    border-radius: 20px;
+    border-color: sienna;
+}
+
+#audio4 {
+    position: absolute;
+    top: -70px;
+    left: -100px;
+    width: 120px;
+    height: 120px;
+    background-color: coral;
+    border-radius: 20px;
+    border-color: sienna;
+}
+
+#audio5 {
+    position: absolute;
+    top: -70px;
+    left: 30px;
+    width: 120px;
+    height: 120px;
+    background-color: coral;
+    border-radius: 20px;
+    border-color: sienna;
+}
+
+#audio6 {
+    position: absolute;
+    top: -70px;
+    left: 160px;
+    width: 120px;
+    height: 120px;
+    background-color: coral;
+    border-radius: 20px;
+    border-color: sienna;
+}
+
+#audio7 {
+    position: absolute;
+    top: 60px;
+    left: -100px;
+    width: 120px;
+    height: 120px;
+    background-color: coral;
+    border-radius: 20px;
+    border-color: sienna;
+}
+
+#audio8 {
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    width: 120px;
+    height: 120px;
+    background-color: coral;
+    border-radius: 20px;
+    border-color: sienna;
+}
+
+#audio9 {
+    position: absolute;
+    top: 60px;
+    left: 160px;
+    width: 120px;
+    height: 120px;
+    background-color: coral;
+    border-radius: 20px;
+    border-color: sienna;
+}
+
+#audio1:hover {
+    background-color: tan;
+    border-color: blueviolet;
+}
+
+#audio2:hover {
+    background-color: tan;
+    border-color: blueviolet;
+}
+
+#audio3:hover {
+    background-color: tan;
+    border-color: blueviolet;
+}
+
+#audio4:hover {
+    background-color: tan;
+    border-color: blueviolet;
+}
+
+#audio5:hover {
+    background-color: tan;
+    border-color: blueviolet;
+}
+
+#audio6:hover {
+    background-color: tan;
+    border-color: blueviolet;
+}
+
+#audio7:hover {
+    background-color: tan;
+    border-color: blueviolet;
+}
+
+#audio8:hover {
+    background-color: tan;
+    border-color: blueviolet;
+}
+
+#audio9:hover {
+    background-color: tan;
+    border-color: blueviolet;
+}
+
+#play {
+    position: absolute;
+    top: -210px;
+    left: -500px;
+    width: 150px;
+   height: 150px;
+}
