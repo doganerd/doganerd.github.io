@@ -16,10 +16,10 @@ function playSample(samples) {
 }
 ;
 function Play() {
-    var Kick = setInterval(Xmas, 300);
+    var Kick = setInterval(bells, 300);
     var index = 0;
     var Beat = ["assets/kick.mp3", "assets/hihat.mp3", "snare.mp3"];
-    function Xmas() {
+    function bells() {
         var sequence = new Audio(Beat[index]);
         sequence.play();
         index += 1;

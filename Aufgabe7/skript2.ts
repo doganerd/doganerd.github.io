@@ -13,18 +13,18 @@ window.addEventListener("load", function() {
 }
 )
 
-function playSample(samples) {
-    var sound = new Audio("assets/ + samples");
+function playSample(samples:string) {
+    var sound:HTMLAudioElement = new Audio("assets/ + samples");
     sound.play();
 }
 ;
 function Play() {
-    var Kick = setInterval(Xmas, 300);
-    var index = 0;
-    var Beat = ["assets/kick.mp3", "assets/hihat.mp3", "snare.mp3"];
+    var Kick = setInterval(bells, 300);
+    var index:number = 0;
+    var Beat:string [] = ["assets/kick.mp3", "assets/hihat.mp3", "snare.mp3"];
 
-    function Xmas() {
-        var sequence = new Audio(Beat[index]);
+    function bells() {
+        var sequence:HTMLAudioElement = new Audio(Beat[index]);
         sequence.play();
         index += 1;
         if (index >3)
