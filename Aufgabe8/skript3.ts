@@ -11,16 +11,23 @@ window.addEventListener("load", function (): void {
     document.querySelector("#audio8").addEventListener("click", handleButton);
     document.querySelector("#audio9").addEventListener("click", handleButton);
     document.querySelector("#play").addEventListener("click", Beats);
+    document.querySelector("#record").addEventListener("click", Recording);
+    document.querySelector("#trash").addEventListener("click", Deleting);
+
+    
+
 });
+
+
+
 
 function playSample(sounds: string): void {
     var sound: HTMLAudioElement = new Audio("assets/" + sounds);
     sound.play();
 }
 
-
-function handleButton (_event: MouseEvent): void {
-    let butonTag: string = (<HTMLElement>_event.target).id;
+function handleButton (event: MouseEvent): void {
+    let butonTag: string = (<HTMLElement>event.target).id;
     switch (butonTag) {
         case "audio1":
             playSample("A.mp3");
@@ -70,4 +77,28 @@ function Beats(): void {
             index = 0;
         console.log(beat[index]);
     }
+}
+
+
+
+
+function Deleting(): void {
+    var kick: number = setInterval(two, 500);
+    var index: number = 0;
+    var beat: string [] = ["click"];
+
+    function two(): void {
+         var sequence: HTMLAudioElement = new Audio(beat[index]);
+         sequence.play();
+         index = 0;
+
+         if (index < 0)
+         index = 0;
+         console.log(beat[index]);
+    }
+   
+}
+function Recording(): void {
+    record = true;
+    console.log("recording Beat");
 }
