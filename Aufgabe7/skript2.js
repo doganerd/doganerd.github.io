@@ -11,10 +11,6 @@ window.addEventListener("load", function () {
     document.querySelector("#audio9").addEventListener("click", function () { playSample("snare.mp3"); });
     document.querySelector("#play").addEventListener("click", Mix);
 });
-function playSample(sounds) {
-    var sound = new Audio("assets/" + sounds);
-    sound.play();
-}
 //mix
 function Mix() {
     var kick = setInterval(one, 500);

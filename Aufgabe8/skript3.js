@@ -1,22 +1,54 @@
 //all buttons
 window.addEventListener("load", function () {
-    document.querySelector("#audio1").addEventListener("click", function () { playSample("A.mp3"); });
-    document.querySelector("#audio2").addEventListener("click", function () { playSample("C.mp3"); });
-    document.querySelector("#audio3").addEventListener("click", function () { playSample("F.mp3"); });
-    document.querySelector("#audio4").addEventListener("click", function () { playSample("G.mp3"); });
-    document.querySelector("#audio5").addEventListener("click", function () { playSample("kick.mp3"); });
-    document.querySelector("#audio6").addEventListener("click", function () { playSample("hihat.mp3"); });
-    document.querySelector("#audio7").addEventListener("click", function () { playSample("laugh-1.mp3"); });
-    document.querySelector("#audio8").addEventListener("click", function () { playSample("laugh-2.mp3"); });
-    document.querySelector("#audio9").addEventListener("click", function () { playSample("snare.mp3"); });
-    document.querySelector("#play").addEventListener("click", Mix);
+    document.querySelector("#audio1").addEventListener("click", handleButton);
+    document.querySelector("#audio2").addEventListener("click", handleButton);
+    document.querySelector("#audio3").addEventListener("click", handleButton);
+    document.querySelector("#audio4").addEventListener("click", handleButton);
+    document.querySelector("#audio5").addEventListener("click", handleButton);
+    document.querySelector("#audio6").addEventListener("click", handleButton);
+    document.querySelector("#audio7").addEventListener("click", handleButton);
+    document.querySelector("#audio8").addEventListener("click", handleButton);
+    document.querySelector("#audio9").addEventListener("click", handleButton);
+    document.querySelector("#play").addEventListener("click", Beats);
 });
 function playSample(sounds) {
     var sound = new Audio("assets/" + sounds);
     sound.play();
 }
+function handleButton(_event) {
+    var butonTag = _event.target.id;
+    switch (butonTag) {
+        case "audio1":
+            playSample("A.mp3");
+            break;
+        case "audio2":
+            playSample("C.mp3");
+            break;
+        case "audio3":
+            playSample("F.mp3");
+            break;
+        case "audio4":
+            playSample("G.mp3");
+            break;
+        case "audio5":
+            playSample("kick.mp3");
+            break;
+        case "audio6":
+            playSample("hihat.mp3");
+            break;
+        case "audio7":
+            playSample("snare.mp3");
+            break;
+        case "audio8":
+            playSample("laugh-1.mp3");
+            break;
+        case "audio9":
+            playSample("laugh-2.mp3");
+            break;
+    }
+}
 //mix
-function Mix() {
+function Beats() {
     var kick = setInterval(one, 500);
     var index = 0;
     var beat = ["assets/kick.mp3", "assets/hihat.mp3", "assets/snare.mp3"];

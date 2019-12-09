@@ -13,10 +13,7 @@ window.addEventListener("load", function (): void {
     document.querySelector("#play").addEventListener("click", Mix);
 });
 
-function playSample(sounds: string): void {
-    var sound: HTMLAudioElement = new Audio("assets/" + sounds);
-    sound.play();
-}
+
 
 //mix
 
