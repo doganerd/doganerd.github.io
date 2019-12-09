@@ -14,7 +14,7 @@ window.addEventListener("load", function (): void {
     document.querySelector("#record").addEventListener("click", Recording);
     document.querySelector("#trash").addEventListener("click", Deleting);
 
-    
+
 
 });
 
@@ -26,31 +26,31 @@ function playSample(sounds: string): void {
     sound.play();
 }
 
-function handleButton (event: MouseEvent): void {
+function handleButton(event: MouseEvent): void {
     let butonTag: string = (<HTMLElement>event.target).id;
     switch (butonTag) {
         case "audio1":
             playSample("A.mp3");
             break;
-        case "audio2":  
+        case "audio2":
             playSample("C.mp3");
             break;
         case "audio3":
             playSample("F.mp3");
             break;
-        case "audio4":  
+        case "audio4":
             playSample("G.mp3");
             break;
         case "audio5":
             playSample("kick.mp3");
             break;
-        case "audio6":  
-            playSample("hihat.mp3"); 
+        case "audio6":
+            playSample("hihat.mp3");
             break;
         case "audio7":
             playSample("snare.mp3");
             break;
-        case "audio8":  
+        case "audio8":
             playSample("laugh-1.mp3");
             break;
         case "audio9":
@@ -77,28 +77,18 @@ function Beats(): void {
             index = 0;
         console.log(beat[index]);
     }
+
 }
 
+var play: any = document.getElementById("play");
+var beats: any = document.getElementById("one");
 
-
-
-function Deleting(): void {
-    var kick: number = setInterval(two, 500);
-    var index: number = 0;
-    var beat: string [] = ["click"];
-
-    function two(): void {
-         var sequence: HTMLAudioElement = new Audio(beat[index]);
-         sequence.play();
-         index = 0;
-
-         if (index < 0)
-         index = 0;
-         console.log(beat[index]);
+play.addEventListener("click", function (): void {
+    if (beats.paused) {
+        beats.play();
+        play.innerHTML = "pause";
+    } else {
+        beats.pause();
+        play.innerHTML = "play";
     }
-   
-}
-function Recording(): void {
-    record = true;
-    console.log("recording Beat");
-}
+};

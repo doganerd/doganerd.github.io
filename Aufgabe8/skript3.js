@@ -63,21 +63,16 @@ function Beats() {
         console.log(beat[index]);
     }
 }
-function Deleting() {
-    var kick = setInterval(two, 500);
-    var index = 0;
-    var beat = ["click"];
-    function two() {
-        var sequence = new Audio(beat[index]);
-        sequence.play();
-        index = 0;
-        if (index < 0)
-            index = 0;
-        console.log(beat[index]);
+var play = document.getElementById("play");
+var beats = document.getElementById("one");
+play.addEventListener("click", function () {
+    if (beats.paused) {
+        beats.play();
+        play.innerHTML = "pause";
     }
-}
-function Recording() {
-    record = true;
-    console.log("recording Beat");
-}
+    else {
+        beats.pause();
+        play.innerHTML = "play";
+    }
+});
 //# sourceMappingURL=skript3.js.map
