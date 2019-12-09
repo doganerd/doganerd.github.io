@@ -29,4 +29,4 @@ function Mix() {
         console.log(beat[index]);
     }
 }
-//# sourceMappingURL=skript2.js.map
+//# sourceMappingURL=skript3.js.map

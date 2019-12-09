@@ -1,0 +1,165 @@
+body {
+    background-color: black;
+}
+
+
+.drumpads {
+
+    position: absolute;
+    left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+}
+
+#audio1 {
+    position: absolute;
+    top: -200px;
+    left: -100px;
+    width: 120px;
+    height: 120px;
+    background-color: #FE2E2E;
+    border-radius: 20px;
+    border-color: #8A2908;
+}
+
+#audio2 {
+    position: absolute;
+    top: -200px;
+    left: 30px;
+    width: 120px;
+    height: 120px;
+    background-color: #FF0000;
+    border-radius: 20px;
+    border-color: #8A2908;
+}
+
+#audio3 {
+    position: absolute;
+    top: -200px;
+    left: 160px;
+    width: 120px;
+    height: 120px;
+    background-color: #DF0101;
+    border-radius: 20px;
+    border-color: #8A2908;
+}
+
+#audio4 {
+    position: absolute;
+    top: -70px;
+    left: -100px;
+    width: 120px;
+    height: 120px;
+    background-color: #B40404;
+    border-radius: 20px;
+    border-color: #8A2908;
+}
+
+#audio5 {
+    position: absolute;
+    top: -70px;
+    left: 30px;
+    width: 120px;
+    height: 120px;
+    background-color: #8A0808;
+    border-radius: 20px;
+    border-color: #8A2908;
+}
+
+#audio6 {
+    position: absolute;
+    top: -70px;
+    left: 160px;
+    width: 120px;
+    height: 120px;
+    background-color: #610B0B;
+    border-radius: 20px;
+    border-color: #8A2908;
+}
+
+#audio7 {
+    position: absolute;
+    top: 60px;
+    left: -100px;
+    width: 120px;
+    height: 120px;
+    background-color: #3B0B0B;
+    border-radius: 20px;
+    border-color: #8A2908;
+}
+
+#audio8 {
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    width: 120px;
+    height: 120px;
+    background-color: #2A0A0A;
+    border-radius: 20px;
+    border-color: #8A2908;
+}
+
+#audio9 {
+    position: absolute;
+    top: 60px;
+    left: 160px;
+    width: 120px;
+    height: 120px;
+    background-color: #190707;
+    border-radius: 20px;
+    border-color: #8A2908;
+}
+
+#audio1:hover {
+    background-color: #FA5858;
+    border-color: #F6CECE;
+}
+
+#audio2:hover {
+    background-color: #FE2E2E;
+    border-color: #F6CECE;
+}
+
+#audio3:hover {
+    background-color: #FF0000;
+    border-color: #F6CECE;
+}
+
+#audio4:hover {
+    background-color: #DF0101;
+    border-color: #F6CECE;
+}
+
+#audio5:hover {
+    background-color: #B40404;
+    border-color: #F6CECE;
+}
+
+#audio6:hover {
+    background-color: #8A0808;
+    border-color: #F6CECE;
+}
+
+#audio7:hover {
+    background-color: #610B0B;
+    border-color: #F6CECE;
+}
+
+#audio8:hover {
+    background-color: #3B0B0B;
+    border-color: #F6CECE;
+}
+
+#audio9:hover {
+    background-color: #2A0A0A;
+    border-color: #F6CECE;
+}
+
+#play {
+    position: absolute;
+    top: -210px;
+    left: -500px;
+    width: 150px;
+   height: 150px;
+}
