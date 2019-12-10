@@ -11,19 +11,24 @@ window.addEventListener("load", function (): void {
     document.querySelector("#audio8").addEventListener("click", handleButton);
     document.querySelector("#audio9").addEventListener("click", handleButton);
     document.querySelector("#play").addEventListener("click", Beats);
-    document.querySelector("#record").addEventListener("click", Recording);
-    document.querySelector("#trash").addEventListener("click", Deleting);
+    document.querySelector("#record").addEventListener("click", recording);
+    document.querySelector("#trash").addEventListener("click", deleting);
 
 
 
 });
 
-
+var kick: number;
+var beat: string = ("assets/kick.mp3", "assets/hihat.mp3", "assets/snare.mp3");
+var record: boolean = false;
 
 
 function playSample(sounds: string): void {
     var sound: HTMLAudioElement = new Audio("assets/" + sounds);
     sound.play();
+    if (record == true) {
+        Beats.push(sounds);
+    }
 }
 
 function handleButton(event: MouseEvent): void {
@@ -61,34 +66,40 @@ function handleButton(event: MouseEvent): void {
 
 }
 
-//mix
-
 function Beats(): void {
-    var kick: number = setInterval(one, 500);
     var index: number = 0;
-    var beat: string[] = ["assets/kick.mp3", "assets/hihat.mp3", "assets/snare.mp3"];
+    var playid = document.getElementById("play");
 
-    function one(): void {
-        var sequence: HTMLAudioElement = new Audio(beat[index]);
-        sequence.play();
-        index = index + 1;
-
-        if (index > 3)
-            index = 0;
-        console.log(beat[index]);
+    if (playid.classList.contains("fa-play")) {
+        playid.classList.remove("fa-play");
+        playid.classList.add("fa-pause");
+        kick = setInterval(sequence, 500);
+        record = false;
+        console.log("Play");
+    }
+    else {
+        playid.classList.remove("fa-pause");
+        playid.classList.add("fa-pause");
+        clearInterval(kick);
+        console.log("Pause");
     }
 
+    function sequence(): void {
+        playSample(Beats[index]);
+        index = index + 1;
+        if (index == (beat.length)) {
+            index = 0;
+            console.log(Beats[index]);
+        }
+
+    }
 }
 
-var play: any = document.getElementById("play");
-var beats: any = document.getElementById("one");
-
-play.addEventListener("click", function (): void {
-    if (beats.paused) {
-        beats.play();
-        play.innerHTML = "pause";
-    } else {
-        beats.pause();
-        play.innerHTML = "play";
-    }
-};
+function deleting(): void {
+    beat.length = 0;
+    console.log("delete Beat");
+}
+function recording(): void {
+    record = true;
+    console.log("record new Beat");
+}
