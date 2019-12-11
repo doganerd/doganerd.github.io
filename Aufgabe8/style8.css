@@ -2,20 +2,17 @@ body {
     background-color: black;
 }
 
-
-.drumpads {
-
-    position: absolute;
-    left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-
+.box {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(-50%, -50%);
 }
 
 #audio1 {
     position: absolute;
-    top: -200px;
-    left: -100px;
+    top: 100px;
+    left: 650px;
     width: 120px;
     height: 120px;
     background-color: #FE2E2E;
@@ -25,8 +22,8 @@ body {
 
 #audio2 {
     position: absolute;
-    top: -200px;
-    left: 30px;
+    top: 100px;
+    left: 780px;
     width: 120px;
     height: 120px;
     background-color: #FF0000;
@@ -36,8 +33,8 @@ body {
 
 #audio3 {
     position: absolute;
-    top: -200px;
-    left: 160px;
+    top: 100px;
+    left: 910px;
     width: 120px;
     height: 120px;
     background-color: #DF0101;
@@ -47,8 +44,8 @@ body {
 
 #audio4 {
     position: absolute;
-    top: -70px;
-    left: -100px;
+    top: 230px;
+    left: 650px;
     width: 120px;
     height: 120px;
     background-color: #B40404;
@@ -58,8 +55,8 @@ body {
 
 #audio5 {
     position: absolute;
-    top: -70px;
-    left: 30px;
+    top: 230px;
+    left: 780px;
     width: 120px;
     height: 120px;
     background-color: #8A0808;
@@ -69,8 +66,8 @@ body {
 
 #audio6 {
     position: absolute;
-    top: -70px;
-    left: 160px;
+    top: 230px;
+    left: 910px;
     width: 120px;
     height: 120px;
     background-color: #610B0B;
@@ -80,8 +77,8 @@ body {
 
 #audio7 {
     position: absolute;
-    top: 60px;
-    left: -100px;
+    top: 360px;
+    left: 650px;
     width: 120px;
     height: 120px;
     background-color: #3B0B0B;
@@ -91,8 +88,8 @@ body {
 
 #audio8 {
     position: absolute;
-    top: 60px;
-    left: 30px;
+    top: 360px;
+    left: 780px;
     width: 120px;
     height: 120px;
     background-color: #2A0A0A;
@@ -102,8 +99,8 @@ body {
 
 #audio9 {
     position: absolute;
-    top: 60px;
-    left: 160px;
+    top: 360px;
+    left: 910px;
     width: 120px;
     height: 120px;
     background-color: #190707;
@@ -156,34 +153,38 @@ body {
     border-color: #F6CECE;
 }
 
-#play {
+
+.playbutton {
     position: absolute;
-    top: -210px;
-    left: -500px;
-    width: 150px;
-    height: 150px;
+    top: 110px;
+    left: 500px;
+    font-size: 80px;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
 }
 
-#pause {
-    position: absolute;
-    top: -210px;
-    left: -500px;
-    width: 150px;
-    height: 150px;
+.playbutton:hover {
+    opacity: 0.5;
+    cursor: pointer;
 }
 
-#trash {
+.delete {
     position: absolute;
-    top: 100px;
-    left: -485px;
-    width: 50px;
-    height: 50px;
+    top: 230px;
+    left: 500px;
+    font-size: 80px;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
 }
 
-#record {
+.record {
     position: absolute;
-    top: 100px;
-    left: -400px;
-    width: 50px;
-    height: 50px;
+    top: 360px;
+    left: 500px;
+    font-size: 80px;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
 }
