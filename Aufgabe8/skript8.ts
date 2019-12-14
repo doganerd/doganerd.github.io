@@ -1,6 +1,6 @@
 var mysound: string [] = ["kick.mp3", "hihat.mp3", "snare.mp3"];
 var record: boolean =  false;
-var sequence: any;
+var sequence;
 
 window.addEventListener("load", function (): void {
     document.querySelector("#audio1").addEventListener("click", function (): void { playSample("A.mp3"); });
