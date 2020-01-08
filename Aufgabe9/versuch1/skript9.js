@@ -25,7 +25,7 @@ function add(taskload) {
     document.querySelector(".Rahmen").appendChild(button); // Hinzufügen vom Template
     console.log("addTasktoList:" + taskload);
 }
-function deleting(removetask) {
+function deleted(removetask) {
     console.log("deleting task");
     removetask.parentElement.remove();
     var line = document.querySelector(".row");
