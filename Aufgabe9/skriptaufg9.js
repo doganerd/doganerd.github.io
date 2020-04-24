@@ -1,4 +1,3 @@
-// Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
 var x;
 for (x = 0; x < myNodelist.length; x++) {
@@ -8,7 +7,6 @@ for (x = 0; x < myNodelist.length; x++) {
     span.appendChild(txt);
     myNodelist[x].appendChild(span);
 }
-// Click on a close button to hide the current list item
 var closing = document.getElementsByClassName("closing");
 for (x = 0; x < closing.length; x++) {
     closing[x].onclick = function () {
@@ -16,7 +14,6 @@ for (x = 0; x < closing.length; x++) {
         div.style.display = "none";
     };
 }
-// Create a new list item when clicking on the "Add" button
 function newElement() {
     var li = document.createElement("li");
     var inputValue = document.getElementById("newtask").value;
