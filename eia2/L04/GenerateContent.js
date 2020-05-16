@@ -13,7 +13,7 @@ var Haushaltshilfe;
                     group = createSingle(items, category);
                     break;
                 case "Chores":
-                    group = createSelect(items, category);
+                    group = createSelect(items);
                     break;
                 default:
                     break;
@@ -32,7 +32,6 @@ var Haushaltshilfe;
             select.type = "select";
             select.setAttribute("price", item.price.toFixed(2));
             select.value = item.name;
-            select.name = _category;
             select.id = item.name;
             var label = document.createElement("label");
             label.textContent = item.name;

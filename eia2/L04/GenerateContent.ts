@@ -20,7 +20,7 @@ namespace Haushaltshilfe {
                     break;
 
                 case "Chores":
-                    group = createSelect(items, category);
+                    group = createSelect(items);
 
                     break;
 
@@ -41,7 +41,6 @@ function createSelect(_items: Item[]): HTMLElement | null{
         select.type ="select";
         select.setAttribute("price", item.price.toFixed(2));
         select.value = item.name;
-        select.name = _category;
         select.id = item.name;
 
         let label: HTMLLabelElement = document.createElement("label");
