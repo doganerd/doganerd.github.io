@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Haushaltshilfe</title>
     <link rel="stylesheet" href="datastructure.css">
+    <script src="datas.js"></script>
+    <script src="GenerateContent.js"></script>
     <script src="datastructure.js"></script>
+
 </head>
 <body>
   <header>
@@ -49,16 +52,16 @@
             </span>
         </fieldset>
 
-        <fieldset>
+        <fieldset id="field2">
             <legend>Banking</legend>
             <input type="radio" name="Money" id="withdraw" value="Withdraw">
             <label for="withdraw">Withdraw Money</label>
             <input type="radio" name="Money" id="deposit" value="Deposit">
             <label for="deposit">Deposit Money</label> <br> <br>
-            <input type="number" name="Betrag" step="5" min="0" max="500" value="0">
+            <input type="number" name="Betrag" step="5" min="0" max="1000" value="0">
         </fieldset>
 
-        <fieldset>
+        <fieldset id="field3">
             <legend>Chores</legend>
         
             <select name="chores" id="chores">

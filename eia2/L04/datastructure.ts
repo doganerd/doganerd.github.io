@@ -3,6 +3,9 @@ namespace Haushaltshilfe {
     window.addEventListener("load", handleLoad);
 
     function handleLoad(): void {
+
+        generateContent(data);
+
         let form: HTMLDivElement = <HTMLDivElement> document.querySelector("#form");
         form.addEventListener("change", handleChange);
         document.querySelector("#button")?.addEventListener("click", handleClick)

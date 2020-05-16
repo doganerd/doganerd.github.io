@@ -4,6 +4,7 @@ var Haushaltshilfe;
     window.addEventListener("load", handleLoad);
     function handleLoad() {
         var _a;
+        Haushaltshilfe.generateContent(Haushaltshilfe.data);
         var form = document.querySelector("#form");
         form.addEventListener("change", handleChange);
         (_a = document.querySelector("#button")) === null || _a === void 0 ? void 0 : _a.addEventListener("click", handleClick);
