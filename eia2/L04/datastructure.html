@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Haushaltshilfe</title>
     <link rel="stylesheet" href="datastructure.css">
-    <script src="datas.js"></script>
     <script src="GenerateContent.js"></script>
     <script src="datastructure.js"></script>
 
@@ -14,8 +13,8 @@
   <header>
   </header>  
 
-<form>
-    <div id="form">
+<form id="form">
+    <div>
         <h1>Haushaltshilfe</h2>
         <fieldset id="field1">
             <legend>Groceries</legend>
@@ -95,7 +94,8 @@
     <div id="order"> 
        ... 
     </div>
-    <button id="button">Confirm</button>
+    <button type="button" form="form" id="button">Confirm</button>
+    <button type="reset" form="form">Reset</button>
 </div>
 </body>
 </html>
