@@ -2,7 +2,7 @@
 var Haushaltshilfe;
 (function (Haushaltshilfe) {
     window.addEventListener("load", handleLoad);
-    function handleLoad() {
+    async function handleLoad() {
         var _a;
         Haushaltshilfe.generateContent(Haushaltshilfe.data);
         var form = document.querySelector("#form");
