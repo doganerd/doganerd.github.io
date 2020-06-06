@@ -39,13 +39,15 @@ var Haushaltshilfe;
 (function (Haushaltshilfe) {
     window.addEventListener("load", handleLoad);
     var form;
+    //let url: string = "server.html"
+    var url = "https://https://dilarax.herokuapp.com/";
     function handleLoad(_event) {
         var _a;
         return __awaiter(this, void 0, void 0, function () {
             var response, offer, data, button, submit;
             return __generator(this, function (_b) {
                 switch (_b.label) {
-                    case 0: return [4 /*yield*/, fetch("data.json")];
+                    case 0: return [4 /*yield*/, fetch("datal05.json")];
                     case 1:
                         response = _b.sent();
                         return [4 /*yield*/, response.text()];
@@ -69,17 +71,23 @@ var Haushaltshilfe;
     }
     function sendOrder(_event) {
         return __awaiter(this, void 0, void 0, function () {
-            var formData, query;
+            var formData, query, response, responseText;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
                         console.log("Send Order");
                         formData = new FormData(form);
                         query = new URLSearchParams(formData);
-                        return [4 /*yield*/, fetch("datastructure.html?" + query.toString())];
+                        return [4 /*yield*/, fetch(url + "?" + query.toString())];
                     case 1:
+                        response = _a.sent();
+                        return [4 /*yield*/, response.text()];
+                    case 2:
+                        responseText = _a.sent();
+                        return [4 /*yield*/, fetch(url, "?", +query.toString())];
+                    case 3:
                         _a.sent();
-                        alert("Vielen Dank für ihre Bestellung!");
+                        alert("Order sent!");
                         return [2 /*return*/];
                 }
             });
