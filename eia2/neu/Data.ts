@@ -31,4 +31,3 @@ var HaushaltshilfeA4;
         ]
     };
 })(HaushaltshilfeA4 || (HaushaltshilfeA4 = {}));
-//# sourceMappingURL=Data.js.map

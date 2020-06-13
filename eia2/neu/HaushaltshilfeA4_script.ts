@@ -47,4 +47,3 @@ var HaushaltshilfeA4;
         order.innerHTML += "Supermarkt Präferenz: " + supermarkt + "<br>" + "______________________ <br>" + "Total: " + total + "€";
     }
 })(HaushaltshilfeA4 || (HaushaltshilfeA4 = {}));
-//# sourceMappingURL=HaushaltshilfeA4_script.js.map

@@ -86,4 +86,3 @@ var HaushaltshilfeA4;
     }
     HaushaltshilfeA4.generateContent = generateContent;
 })(HaushaltshilfeA4 || (HaushaltshilfeA4 = {}));
-//# sourceMappingURL=GenerateContent.js.map
