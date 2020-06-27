@@ -1,7 +1,7 @@
 var Virus;
 (function (Virus) {
-    var Particle = /** @class */ (function () {
-        function Particle(_position) {
+    var Particles = /** @class */ (function () {
+        function Particles(_position) {
             this.position = _position;
             var colors = ["HSL(0, 50%, 100%)", "HSLA(360, 40%, 60%)"];
             var numColors = colors.length;
@@ -16,7 +16,8 @@ var Virus;
             this.velocity = new Virus.Vector(0, 0);
             this.velocity.random(10, 100);
         }
-        Particle.prototype.draw = function () {
+        Particles.prototype.draw = function () {
+            var crc2;
             console.log("Cell draw");
             crc2.save();
             var r1 = 1;
@@ -34,8 +35,9 @@ var Virus;
             crc2.fill(particle);
             crc2.restore();
         };
-        Particle.prototype.move = function (_timeslice) {
+        Particles.prototype.move = function (_timeslice) {
             console.log("Cell move");
+            var crc2;
             var offset = new Virus.Vector(this.velocity.x, this.velocity.y);
             offset.x *= 0;
             offset.y *= _timeslice * 1.5;
@@ -49,8 +51,8 @@ var Virus;
             if (this.position.y > crc2.canvas.height)
                 this.position.y -= crc2.canvas.height;
         };
-        return Particle;
+        return Particles;
     }());
-    Virus.Particle = Particle;
+    Virus.Particles = Particles;
 })(Virus || (Virus = {}));
 //# sourceMappingURL=particle.js.map

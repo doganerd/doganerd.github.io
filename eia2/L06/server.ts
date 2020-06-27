@@ -34,7 +34,7 @@ namespace Haushaltshilfe {
         let query: URLSearchParams = new URLSearchParams(<any>formData);
         let response: Response = await fetch(url + "?" + query.toString());
         let responseText: string = await response.text();
-        await fetch(url "?", + query.toString());
+        await fetch(url, "?", + query.toString());
         alert("Order sent!");
     }
 
