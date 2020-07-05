@@ -1,4 +1,4 @@
-namespace Inheritance {
+namespace Virus {
     interface Vector {
         x: number;
         y: number;

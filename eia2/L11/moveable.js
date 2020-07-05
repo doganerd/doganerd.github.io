@@ -9,6 +9,16 @@ var Virus;
                 this.position = new Virus.Vector(0, 0);
             this.velocity = new Virus.Vector(0, 0);
         }
+        Moveable.prototype.isinfectedBy = function (_partner) {
+            var difference = Virus.Vector.getDifference(this.position, _partner.position);
+            if (this.hitRadius + _partner.hitRadius < difference.length)
+                return false;
+            return true;
+        };
+        Moveable.prototype.infected = function () {
+            console.log("Hit", this);
+            this.expendable = true;
+        };
         Moveable.prototype.move = function (_timeslice) {
             var offset = this.velocity.copy();
             offset.scale(_timeslice);

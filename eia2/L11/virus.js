@@ -1,5 +1,5 @@
-var Inheritance;
-(function (Inheritance) {
+var Virus;
+(function (Virus) {
     window.addEventListener("load", handleload);
     var crc2;
     function handleload(_event) {
@@ -145,5 +145,5 @@ var Inheritance;
         }
         crc2.restore();
     }
-})(Inheritance || (Inheritance = {}));
+})(Virus || (Virus = {}));
 //# sourceMappingURL=virus.js.map

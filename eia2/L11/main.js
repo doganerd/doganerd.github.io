@@ -12,14 +12,14 @@ var Virus;
         Virus.crc2.fillStyle = "black";
         Virus.crc2.strokeStyle = "white";
         Virus.crc2.lineWidth = Virus.linewidth;
-        createPaths();
-        console.log("Virus paths: ", virusPaths);
+        Virus.createPaths();
+        console.log("Virus paths: ", Virus.virusPaths);
         createVirus(5);
         canvas.addEventListener("mouseup", corona);
         window.setInterval(update, 20);
     }
     function corona(_event) {
-        console.log("Shoot laser");
+        console.log("hit");
         var hotspot = new Virus.Vector(_event.clientX - Virus.crc2.canvas.offsetLeft, _event.clientY - Virus.crc2.canvas.offsetTop);
         var virusHit = getVirusHit(hotspot);
         console.log(virusHit);

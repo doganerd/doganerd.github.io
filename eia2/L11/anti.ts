@@ -2,8 +2,8 @@ namespace Virus {
     export class Anti extends Moveable {
         position: Vector;
         velocity: Vector;
-        radius: number;
-        color: string;
+        public radius: number;
+        private color: string;
 
 
         constructor(_position: Vector) {
@@ -27,7 +27,7 @@ namespace Virus {
             this.velocity = new Vector(0, 0);
             this.velocity.random(10, 100);
         }
-        draw(): void {
+        public draw(): void {
             let crc2: CanvasRenderingContext2D;
             console.log("Cell draw");
             crc2.save();
@@ -55,7 +55,7 @@ namespace Virus {
 
         }
 
-        move(_timeslice: number): void {
+        public move(_timeslice: number): void {
             console.log("Cell move");
             let crc2: CanvasRenderingContext2D;
             let offset: Vector = new Vector(this.velocity.x, this.velocity.y);

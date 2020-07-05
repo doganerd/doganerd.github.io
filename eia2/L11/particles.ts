@@ -2,8 +2,8 @@ namespace Virus {
     export class Particle extends Moveable {
         position: Vector;
         velocity: Vector;
-        radius: number;
-        color: string;
+        public radius: number;
+        private color: string;
 
 
         constructor(_position: Vector) {

@@ -1,4 +1,4 @@
-namespace Inheritance {
+namespace Virus {
     export class Vector {
         x: number;
         y: number;

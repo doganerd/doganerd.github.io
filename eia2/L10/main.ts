@@ -29,7 +29,7 @@ namespace Virus {
     }
 
     function corona(_event: MouseEvent): void {
-        console.log("Shoot laser");
+        console.log("hit");
         let hotspot: Vector = new Vector(_event.clientX - crc2.canvas.offsetLeft, _event.clientY - crc2.canvas.offsetTop);
         let virusHit: Virus | null = getVirusHit(hotspot);
         console.log(virusHit);

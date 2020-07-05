@@ -1,5 +1,5 @@
-var Inheritance;
-(function (Inheritance) {
+var Virus;
+(function (Virus) {
     var Vector = /** @class */ (function () {
         function Vector(_x, _y) {
             this.set(_x, _y);
@@ -24,6 +24,6 @@ var Inheritance;
         };
         return Vector;
     }());
-    Inheritance.Vector = Vector;
-})(Inheritance || (Inheritance = {}));
+    Virus.Vector = Vector;
+})(Virus || (Virus = {}));
 //# sourceMappingURL=vector.js.map
