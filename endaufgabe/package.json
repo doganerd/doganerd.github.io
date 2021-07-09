@@ -1,0 +1,26 @@
+{
+  "name": "rossi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@types/node": "^15.3.0",
+    "mongodb": "^3.5.8",
+    "tslint": "^6.1.3",
+    "ws": "^7.4.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node Server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RossiRx/EIA2.git"
+  },
+  "author": "rossi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RossiRx/EIA2/issues"
+  },
+  "homepage": "https://github.com/RossiRx/EIA2#readme"
+}
