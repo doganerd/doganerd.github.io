@@ -5,7 +5,7 @@ namespace Fussball {
         type: number;
 
 
-        constructor(_position?: Vector) {
+        constructor(_position: Vector) {
             console.log("Player Constructor");
 
             if (_position)
