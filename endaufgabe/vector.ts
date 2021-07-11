@@ -1,4 +1,4 @@
-namespace Fussball {
+namespace game {
     export class Vector {
         x: number;
         y: number;
@@ -22,11 +22,5 @@ namespace Fussball {
             this.y += _addend.y;
         }
 
-        random(): void {
-            let direction: number = Math.random() * 2 * Math.PI;
-
-            this.set(Math.cos(direction), Math.sin(direction));
-            this.scale(length);
-        }
     }
 }

@@ -1,23 +1,28 @@
-namespace Fussball {
-    export class Player {
-        position: Vector;
-        velocity: Vector;
-        type: number;
+namespace game{
 
-
-        constructor(_position: Vector) {
-            console.log("Player Constructor");
-
-            if (_position)
-                this.position = _position;
-            else
-                this.position = new Vector(200, 200);
-
-            this.velocity = new Vector(200, 200);
-            this.velocity.random();
-
-            this.type = Math.floor(Math.random() * 4);
-
+    export class Player extends Moveable{
+        constructor(){
+            super();
         }
+
+        draw(): void{
+
+            ctx.beginPath();
+            ctx.translate(this.position.x, this.position.y);
+            ctx.ellipse(0, 0, 10, 20, 5, 0, 2* Math.PI);
+            ctx.fillStyle = "orange";
+            ctx.fill();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.arc(18, 2, 10, 0, 2*Math.PI);
+            ctx.fillStyle = "black";
+            ctx.fill();
+            ctx.closePath();
+
+            ctx.restore();
+        }
+
+
     }
 }
