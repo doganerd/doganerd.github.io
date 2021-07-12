@@ -2,24 +2,130 @@
 var game;
 (function (game) {
     class Player extends game.Moveable {
-        constructor() {
+        constructor(velocity) {
             super();
-        }
-        draw() {
-            game.ctx.beginPath();
-            game.ctx.translate(this.position.x, this.position.y);
-            game.ctx.ellipse(0, 0, 10, 20, 5, 0, 2 * Math.PI);
-            game.ctx.fillStyle = "orange";
-            game.ctx.fill();
-            game.ctx.closePath();
-            game.ctx.beginPath();
-            game.ctx.arc(18, 2, 10, 0, 2 * Math.PI);
-            game.ctx.fillStyle = "black";
-            game.ctx.fill();
-            game.ctx.closePath();
-            game.ctx.restore();
+            this.velocity = velocity;
+            ;
         }
     }
     game.Player = Player;
+    function drawTeamA() {
+        console.log("TeamA");
+        game.crc2.beginPath();
+        game.crc2.lineWidth = 10;
+        game.crc2.strokeStyle = "orange";
+        game.crc2.arc(250, 400, 10, 0, 2 * Math.PI);
+        game.crc2.stroke();
+        game.crc2.beginPath();
+        game.crc2.lineWidth = 10;
+        game.crc2.strokeStyle = "orange";
+        game.crc2.arc(400, 600, 10, 0, 2 * Math.PI);
+        game.crc2.stroke();
+        game.crc2.beginPath();
+        game.crc2.lineWidth = 10;
+        game.crc2.strokeStyle = "orange";
+        game.crc2.arc(400, 200, 10, 0, 2 * Math.PI);
+        game.crc2.stroke();
+        game.crc2.beginPath();
+        game.crc2.lineWidth = 10;
+        game.crc2.strokeStyle = "orange";
+        game.crc2.arc(600, 400, 10, 0, 2 * Math.PI);
+        game.crc2.stroke();
+        game.crc2.beginPath();
+        game.crc2.lineWidth = 10;
+        game.crc2.strokeStyle = "orange";
+        game.crc2.arc(600, 100, 10, 0, 2 * Math.PI);
+        game.crc2.stroke();
+        game.crc2.beginPath();
+        game.crc2.lineWidth = 10;
+        game.crc2.strokeStyle = "orange";
+        game.crc2.arc(600, 700, 10, 0, 2 * Math.PI);
+        game.crc2.stroke();
+        game.crc2.beginPath();
+        game.crc2.lineWidth = 10;
+        game.crc2.strokeStyle = "orange";
+        game.crc2.arc(900, 250, 10, 0, 2 * Math.PI);
+        game.crc2.stroke();
+        game.crc2.beginPath();
+        game.crc2.lineWidth = 10;
+        game.crc2.strokeStyle = "orange";
+        game.crc2.arc(900, 550, 10, 0, 2 * Math.PI);
+        game.crc2.stroke();
+        game.crc2.beginPath();
+        game.crc2.lineWidth = 10;
+        game.crc2.strokeStyle = "orange";
+        game.crc2.arc(1050, 700, 10, 0, 2 * Math.PI);
+        game.crc2.stroke();
+        game.crc2.beginPath();
+        game.crc2.lineWidth = 10;
+        game.crc2.strokeStyle = "orange";
+        game.crc2.arc(1050, 400, 10, 0, 2 * Math.PI);
+        game.crc2.stroke();
+        game.crc2.beginPath();
+        game.crc2.lineWidth = 10;
+        game.crc2.strokeStyle = "orange";
+        game.crc2.arc(1050, 100, 10, 0, 2 * Math.PI);
+        game.crc2.stroke();
+    }
+    game.drawTeamA = drawTeamA;
+    function drawTeamB() {
+        console.log("TeamB");
+        game.crc2.beginPath();
+        game.crc2.lineWidth = 10;
+        game.crc2.strokeStyle = "purple";
+        game.crc2.arc(1250, 400, 10, 0, 2 * Math.PI);
+        game.crc2.stroke();
+        game.crc2.beginPath();
+        game.crc2.lineWidth = 10;
+        game.crc2.strokeStyle = "purple";
+        game.crc2.arc(1100, 600, 10, 0, 2 * Math.PI);
+        game.crc2.stroke();
+        game.crc2.beginPath();
+        game.crc2.lineWidth = 10;
+        game.crc2.strokeStyle = "purple";
+        game.crc2.arc(1100, 200, 10, 0, 2 * Math.PI);
+        game.crc2.stroke();
+        game.crc2.beginPath();
+        game.crc2.lineWidth = 10;
+        game.crc2.strokeStyle = "purple";
+        game.crc2.arc(900, 400, 10, 0, 2 * Math.PI);
+        game.crc2.stroke();
+        game.crc2.beginPath();
+        game.crc2.lineWidth = 10;
+        game.crc2.strokeStyle = "purple";
+        game.crc2.arc(900, 100, 10, 0, 2 * Math.PI);
+        game.crc2.stroke();
+        game.crc2.beginPath();
+        game.crc2.lineWidth = 10;
+        game.crc2.strokeStyle = "purple";
+        game.crc2.arc(900, 700, 10, 0, 2 * Math.PI);
+        game.crc2.stroke();
+        game.crc2.beginPath();
+        game.crc2.lineWidth = 10;
+        game.crc2.strokeStyle = "purple";
+        game.crc2.arc(600, 250, 10, 0, 2 * Math.PI);
+        game.crc2.stroke();
+        game.crc2.beginPath();
+        game.crc2.lineWidth = 10;
+        game.crc2.strokeStyle = "purple";
+        game.crc2.arc(600, 550, 10, 0, 2 * Math.PI);
+        game.crc2.stroke();
+        game.crc2.beginPath();
+        game.crc2.lineWidth = 10;
+        game.crc2.strokeStyle = "purple";
+        game.crc2.arc(450, 700, 10, 0, 2 * Math.PI);
+        game.crc2.stroke();
+        game.crc2.beginPath();
+        game.crc2.lineWidth = 10;
+        game.crc2.strokeStyle = "purple";
+        game.crc2.arc(450, 400, 10, 0, 2 * Math.PI);
+        game.crc2.stroke();
+        game.crc2.beginPath();
+        game.crc2.lineWidth = 10;
+        game.crc2.strokeStyle = "purple";
+        game.crc2.arc(450, 100, 10, 0, 2 * Math.PI);
+        game.crc2.stroke();
+    }
+    game.drawTeamB = drawTeamB;
 })(game || (game = {}));
 //# sourceMappingURL=player.js.map

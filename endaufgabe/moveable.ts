@@ -6,8 +6,8 @@ namespace game {
         posiY: number;
 
         constructor() {
-            let x: number = ctx.canvas.width * Math.random();
-            let y: number = ctx.canvas.height * Math.random();
+            let x: number = crc2.canvas.width * Math.random();
+            let y: number = crc2.canvas.height * Math.random();
 
             this.position = new Vector(x, y);
 
@@ -16,14 +16,14 @@ namespace game {
         move(): void {
 
             this.position.add(this.velocity);
-            if (this.position.x > ctx.canvas.width) {
-                this.position.x -= ctx.canvas.width;
-                this.position.y = ctx.canvas.height * Math.random() ;
+            if (this.position.x > crc2.canvas.width) {
+                this.position.x -= crc2.canvas.width;
+                this.position.y = crc2.canvas.height * Math.random() ;
 
             }
-            if (this.position.y > ctx.canvas.height) {
-                this.position.y -= ctx.canvas.height;
-                this.position.x = ctx.canvas.width * Math.random();
+            if (this.position.y > crc2.canvas.height) {
+                this.position.y -= crc2.canvas.height;
+                this.position.x = crc2.canvas.width * Math.random();
 
             }
 

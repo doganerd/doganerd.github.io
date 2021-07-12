@@ -3,75 +3,75 @@ namespace game {
    export function drawBackground(): void {
         console.log("Background");
 
-        let gradient: CanvasGradient = ctx.createLinearGradient(0, 0, 0, ctx.canvas.height);
+        let gradient: CanvasGradient = crc2.createLinearGradient(0, 0, 0, crc2.canvas.height);
         gradient.addColorStop(1, "green");
 
-        ctx.fillStyle = gradient;
-        ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+        crc2.fillStyle = gradient;
+        crc2.fillRect(0, 0, crc2.canvas.width, crc2.canvas.height);
     }
 
     export function drawCircle(): void {
         console.log("Circle");
 
      
-        ctx.beginPath();
-        ctx.lineWidth =   4;
-        ctx.strokeStyle = "white";
-        ctx.arc(750, 400, 80, 0, 2 * Math.PI);
-        ctx.stroke();
+        crc2.beginPath();
+        crc2.lineWidth =   4;
+        crc2.strokeStyle = "white";
+        crc2.arc(750, 400, 80, 0, 2 * Math.PI);
+        crc2.stroke();
     }
 
     export function drawSquare(): void {
         console.log("Square");
 
         
-        ctx.beginPath();
-        ctx.rect(150, 50, 1200, 700);
-        ctx.stroke();
+        crc2.beginPath();
+        crc2.rect(150, 50, 1200, 700);
+        crc2.stroke();
     }
 
     export function drawLeft(): void {
         console.log("LeftSquare");
 
         
-        ctx.beginPath();
-        ctx.rect(150, 200, 200, 400);
-        ctx.stroke();
+        crc2.beginPath();
+        crc2.rect(150, 200, 200, 400);
+        crc2.stroke();
     }
 
     export function drawRight(): void {
         console.log("RightSquare");
 
        
-        ctx.beginPath();
-        ctx.rect(1150, 200, 200, 400);
-        ctx.stroke();
+        crc2.beginPath();
+        crc2.rect(1150, 200, 200, 400);
+        crc2.stroke();
     }
 
     export function drawGoalLeft(): void {
         console.log("LeftGoal");
 
         
-        ctx.beginPath();
-        ctx.rect(150, 350, 50, 100);
-        ctx.stroke();
+        crc2.beginPath();
+        crc2.rect(150, 350, 50, 100);
+        crc2.stroke();
     }
 
     export function drawGoalRight(): void {
         console.log("RightGoal");
 
       
-        ctx.beginPath();
-        ctx.rect(1300, 350, 50, 100);
-        ctx.stroke();
+        crc2.beginPath();
+        crc2.rect(1300, 350, 50, 100);
+        crc2.stroke();
     }
 
     export function drawMiddleLine(): void {
         console.log("MiddleLine");
 
        
-        ctx.moveTo(750, 50);
-        ctx.lineTo(750, 750);
-        ctx.stroke();
+        crc2.moveTo(750, 50);
+        crc2.lineTo(750, 750);
+        crc2.stroke();
     }
 }

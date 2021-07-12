@@ -5,7 +5,7 @@ var game;
     game.spieler = [];
     function handleload(_event) {
         game.canvas = document.querySelector("canvas");
-        game.ctx = game.canvas.getContext("2d");
+        game.crc2 = game.canvas.getContext("2d");
         if (!game.canvas)
             return;
         game.drawBackground();
@@ -16,19 +16,8 @@ var game;
         game.drawGoalLeft();
         game.drawGoalRight();
         game.drawMiddleLine();
-        createTeam(22);
-    }
-    function createTeam(spieleranzahl) {
-        for (let i = 0; i < spieleranzahl; i++) {
-            let playerone = new game.Player();
-            let playeron = new game.Player();
-            game.spieler.push(playerone);
-            game.spieler.push(playeron);
-        }
-        game.spieler.forEach(element => {
-            console.log(element);
-            element.draw();
-        });
+        game.drawTeamA();
+        game.drawTeamB();
     }
 })(game || (game = {}));
 //# sourceMappingURL=canvas.js.map
